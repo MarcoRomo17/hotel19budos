@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "hotel19budos_backend": {
+      "main": "src/hotel19budos_backend/main.mo",
+      "type": "motoko"
+    },
+    "hotel19budos_frontend": {
+      "dependencies": [
+        "hotel19budos_backend"
+      ],
+      "source": [
+        "src/hotel19budos_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "hotel19budos_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
